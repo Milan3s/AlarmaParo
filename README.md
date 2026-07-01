@@ -169,7 +169,7 @@ Una vez importada la base de datos y configurada la conexión, ejecuta el proyec
 
 # 👨‍💻 Autor
 
-**Soujirito**
+**David Milanés Moreno**
 
 **AlarmaParo** es un **software independiente** desarrollado utilizando **Java**, **JavaFX**, **MySQL** y **JDBC**.
 
