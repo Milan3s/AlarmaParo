@@ -1,7 +1,7 @@
 ```markdown
 # 🚨 AlarmaParo
 
-![AlarmaParo](docs/img/portada.png)
+![AlarmaParo](portada.png)
 
 ## 📋 Descripción
 
