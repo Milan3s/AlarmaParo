@@ -83,20 +83,6 @@ Cada recordatorio puede configurarse con una antelación determinada para facili
 
 ---
 
-## 📸 Capturas
-
-Puedes añadir más imágenes aquí:
-
-```markdown
-![Pantalla principal](docs/img/inicio.png)
-
-![Renovaciones](docs/img/renovaciones.png)
-
-![Recordatorios](docs/img/recordatorios.png)
-````
-
----
-
 ## 🚀 Cómo ejecutar
 
 1. Clonar el repositorio.
