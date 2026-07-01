@@ -1,0 +1,131 @@
+/*
+ * formborrarrecordatorio.css
+ */
+
+.root {
+    -fx-background-color: #f8f9fa;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 13px;
+}
+
+.mainFxmlClass {
+    -fx-background-color: #f8f9fa;
+}
+
+/* =========================================
+   COMBOBOX
+   ========================================= */
+
+.combo-box {
+    -fx-background-color: white;
+    -fx-border-color: #dcdfe3;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-border-width: 1;
+    -fx-font-size: 13px;
+}
+
+.combo-box .text-field {
+    -fx-background-color: transparent;
+    -fx-text-fill: #212529;
+    -fx-font-size: 13px;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: transparent;
+}
+
+.combo-box .arrow {
+    -fx-background-color: #6c757d;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #212529;
+    -fx-font-size: 13px;
+}
+
+.combo-box .list-view {
+    -fx-background-color: white;
+    -fx-border-color: #dcdfe3;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+}
+
+.combo-box .list-view .list-cell:hover {
+    -fx-background-color: #f1f3f5;
+}
+
+.combo-box .list-view .list-cell:selected {
+    -fx-background-color: #dcdfe3;
+    -fx-text-fill: #212529;
+}
+
+/* =========================================
+   SPINNER
+   ========================================= */
+
+.spinner {
+    -fx-background-color: white;
+    -fx-border-color: #dcdfe3;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-border-width: 1;
+    -fx-font-size: 13px;
+}
+
+.spinner .text-field {
+    -fx-background-color: transparent;
+    -fx-text-fill: #212529;
+    -fx-font-size: 13px;
+}
+
+.spinner .increment-arrow-button,
+.spinner .decrement-arrow-button {
+    -fx-background-color: transparent;
+}
+
+.spinner .increment-arrow-button:hover,
+.spinner .decrement-arrow-button:hover {
+    -fx-background-color: #f1f3f5;
+}
+
+/* =========================================
+   BOTONES
+   ========================================= */
+
+.button {
+    -fx-background-color: white;
+    -fx-text-fill: #212529;
+    -fx-border-color: #dcdfe3;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-border-width: 1;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #f1f3f5;
+    -fx-border-color: #c7ccd1;
+}
+
+.button:pressed {
+    -fx-background-color: #e9ecef;
+}
+
+/* Botón Borrar */
+#btnBorrar {
+    -fx-background-color: #dc2626;
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+}
+
+#btnBorrar:hover {
+    -fx-background-color: #b91c1c;
+}
+
+#btnBorrar:pressed {
+    -fx-background-color: #991b1b;
+}

@@ -1,0 +1,254 @@
+/*
+ * renovar.css
+ */
+
+.mainFxmlClass {
+
+    -fx-background-color: #f8fafc;
+
+}
+
+/* ========================================= */
+/* LABELS */
+/* ========================================= */
+
+.label {
+
+    -fx-text-fill: #1f2937;
+
+}
+
+/* ========================================= */
+/* TEXTFIELD */
+/* ========================================= */
+
+.text-field {
+
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+
+    -fx-border-color: #d1d5db;
+    -fx-border-radius: 8;
+
+    -fx-padding: 0 12 0 12;
+
+    -fx-font-size: 13px;
+
+}
+
+.text-field:focused {
+
+    -fx-border-color: #2563eb;
+
+}
+
+/* ========================================= */
+/* BOTONES */
+/* ========================================= */
+
+.button {
+
+    -fx-background-color: #2563eb;
+    -fx-background-radius: 8;
+
+    -fx-text-fill: white;
+
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+
+    -fx-cursor: hand;
+
+}
+
+.button:hover {
+
+    -fx-background-color: #1d4ed8;
+
+}
+
+.button:pressed {
+
+    -fx-background-color: #1e40af;
+
+}
+
+/* ========================================= */
+/* TABLEVIEW */
+/* ========================================= */
+
+.table-view {
+
+    -fx-background-color: white;
+
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+
+    -fx-border-color: #d1d5db;
+
+}
+
+/* Cabecera */
+
+.table-view .column-header-background {
+
+    -fx-background-color: #f3f4f6;
+
+}
+
+.table-view .column-header {
+
+    -fx-background-color: #f3f4f6;
+
+    -fx-border-color: transparent transparent #d1d5db transparent;
+
+}
+
+.table-view .column-header .label {
+
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #1f2937;
+
+    -fx-alignment: CENTER;
+
+}
+
+/* Fondo vacío */
+
+.table-view .filler {
+
+    -fx-background-color: #f3f4f6;
+
+}
+
+/* Filas */
+
+.table-row-cell {
+
+    -fx-background-color: white;
+
+    -fx-table-cell-border-color: #eeeeee;
+
+}
+
+.table-row-cell:odd {
+
+    -fx-background-color: #fafafa;
+
+}
+
+.table-row-cell:hover {
+
+    -fx-background-color: #edf4ff;
+
+}
+
+/* ========================================= */
+/* FILA SELECCIONADA */
+/* ========================================= */
+
+.table-row-cell:selected {
+
+    -fx-background-color: #2563eb;
+
+}
+
+.table-row-cell:selected .table-cell {
+
+    -fx-background-color: #2563eb;
+
+    -fx-text-fill: white;
+
+}
+
+/* Evita el azul claro de Windows */
+
+.table-view:focused .table-row-cell:selected {
+
+    -fx-background-color: #2563eb;
+
+}
+
+.table-view:focused .table-row-cell:selected .table-cell {
+
+    -fx-background-color: #2563eb;
+
+    -fx-text-fill: white;
+
+}
+
+/* ========================================= */
+/* CELDAS */
+/* ========================================= */
+
+.table-cell {
+
+    -fx-font-size: 13px;
+
+    -fx-text-fill: #1f2937;
+
+    -fx-alignment: CENTER;
+
+    -fx-border-color: transparent #eeeeee transparent transparent;
+
+}
+
+/* Observaciones alineadas a la izquierda */
+
+#colObservaciones {
+
+    -fx-alignment: CENTER-LEFT;
+
+}
+
+/* ========================================= */
+/* SCROLL */
+/* ========================================= */
+
+.scroll-bar:vertical,
+.scroll-bar:horizontal {
+
+    -fx-background-color: transparent;
+
+}
+
+.scroll-bar .track {
+
+    -fx-background-color: transparent;
+
+}
+
+.scroll-bar .thumb {
+
+    -fx-background-color: #cbd5e1;
+
+    -fx-background-radius: 20;
+
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+
+    -fx-background-color: transparent;
+
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+
+    -fx-background-color: transparent;
+
+}
+
+/* ========================================= */
+/* PLACEHOLDER */
+/* ========================================= */
+
+.placeholder .label {
+
+    -fx-text-fill: #94a3b8;
+
+    -fx-font-size: 14px;
+
+}

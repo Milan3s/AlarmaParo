@@ -1,0 +1,274 @@
+/*
+ * formborraralarma.css
+ */
+
+.root {
+    -fx-background-color: #f8f9fa;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 13px;
+}
+
+.mainFxmlClass {
+    -fx-background-color: #f8f9fa;
+}
+
+/* =========================================
+   TÍTULO Y DESCRIPCIÓN
+   ========================================= */
+
+.tituloPrincipal {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #212529;
+}
+
+.subtituloPrincipal {
+    -fx-font-size: 14px;
+    -fx-text-fill: #6c757d;
+}
+
+/* =========================================
+   ETIQUETAS DE CAMPO
+   ========================================= */
+
+.etiquetaCampo {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #212529;
+}
+
+/* =========================================
+   COMBOBOX
+   ========================================= */
+
+.comboFormulario {
+    -fx-background-color: white;
+    -fx-border-color: #dcdfe3;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-text-fill: #212529;
+    -fx-padding: 0 12 0 12;
+    -fx-font-size: 13px;
+}
+
+.comboFormulario:hover {
+    -fx-border-color: #bfc4ca;
+}
+
+.comboFormulario:focused {
+    -fx-border-color: #7dafff;
+}
+
+.comboFormulario .list-cell {
+    -fx-background-color: white;
+    -fx-text-fill: #212529;
+    -fx-font-size: 13px;
+    -fx-padding: 6 12 6 12;
+}
+
+.comboFormulario .list-view {
+    -fx-background-color: white;
+    -fx-background-radius: 6;
+    -fx-border-color: #dcdfe3;
+    -fx-border-radius: 6;
+}
+
+.comboFormulario .list-view .list-cell {
+    -fx-background-color: white;
+    -fx-text-fill: #212529;
+    -fx-font-size: 13px;
+    -fx-padding: 6 12 6 12;
+}
+
+.comboFormulario .list-view .list-cell:hover {
+    -fx-background-color: #f1f3f5;
+}
+
+.comboFormulario .list-view .list-cell:selected {
+    -fx-background-color: #7dafff;
+    -fx-text-fill: white;
+}
+
+.comboFormulario .arrow-button {
+    -fx-background-color: transparent;
+}
+
+.comboFormulario .arrow {
+    -fx-background-color: #6c757d;
+}
+
+.comboFormulario .text-field {
+    -fx-background-color: white;
+    -fx-text-fill: #212529;
+    -fx-font-size: 13px;
+    -fx-prompt-text-fill: #9ca3af;
+}
+
+/* =========================================
+   DATEPICKER
+   ========================================= */
+
+.datePickerFormulario {
+    -fx-background-color: white;
+    -fx-border-color: #dcdfe3;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-font-size: 13px;
+}
+
+.datePickerFormulario:hover {
+    -fx-border-color: #bfc4ca;
+}
+
+.datePickerFormulario:focused {
+    -fx-border-color: #7dafff;
+}
+
+.datePickerFormulario .text-field {
+    -fx-background-color: white;
+    -fx-background-radius: 6;
+    -fx-text-fill: #212529;
+    -fx-font-size: 13px;
+    -fx-prompt-text-fill: #9ca3af;
+}
+
+.datePickerFormulario .arrow-button {
+    -fx-background-color: #f1f3f5;
+    -fx-background-radius: 0 6 6 0;
+}
+
+.datePickerFormulario .arrow-button:hover {
+    -fx-background-color: #e9ecef;
+}
+
+/* =========================================
+   SPINNER
+   ========================================= */
+
+.spinnerFormulario {
+    -fx-background-color: white;
+    -fx-border-color: #dcdfe3;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-font-size: 13px;
+}
+
+.spinnerFormulario:hover {
+    -fx-border-color: #bfc4ca;
+}
+
+.spinnerFormulario:focused {
+    -fx-border-color: #7dafff;
+}
+
+.spinnerFormulario .text-field {
+    -fx-background-color: white;
+    -fx-text-fill: #212529;
+    -fx-font-size: 13px;
+    -fx-prompt-text-fill: #9ca3af;
+}
+
+.spinnerFormulario .increment-arrow-button,
+.spinnerFormulario .decrement-arrow-button {
+    -fx-background-color: #f1f3f5;
+}
+
+.spinnerFormulario .increment-arrow-button:hover,
+.spinnerFormulario .decrement-arrow-button:hover {
+    -fx-background-color: #e9ecef;
+}
+
+/* =========================================
+   TEXTAREA
+   ========================================= */
+
+.textAreaFormulario {
+    -fx-background-color: white;
+    -fx-border-color: #dcdfe3;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-text-fill: #212529;
+    -fx-font-size: 13px;
+    -fx-padding: 10;
+}
+
+.textAreaFormulario:hover {
+    -fx-border-color: #bfc4ca;
+}
+
+.textAreaFormulario:focused {
+    -fx-border-color: #7dafff;
+}
+
+.textAreaFormulario .content {
+    -fx-background-color: white;
+    -fx-background-radius: 6;
+}
+
+.textAreaFormulario .text {
+    -fx-fill: #212529;
+}
+
+.textAreaFormulario .scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.textAreaFormulario .scroll-bar .thumb {
+    -fx-background-color: #dcdfe3;
+    -fx-background-radius: 20;
+}
+
+/* =========================================
+   PROMPT TEXT
+   ========================================= */
+
+.text-input {
+    -fx-prompt-text-fill: #9ca3af;
+}
+
+/* =========================================
+   BOTÓN BORRAR (peligro)
+   ========================================= */
+
+.botonPeligro {
+    -fx-background-color: #dc2626;
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.botonPeligro:hover {
+    -fx-background-color: #b91c1c;
+}
+
+.botonPeligro:pressed {
+    -fx-background-color: #991b1b;
+}
+
+/* =========================================
+   BOTÓN CANCELAR
+   ========================================= */
+
+.botonCancelar {
+    -fx-background-color: white;
+    -fx-text-fill: #212529;
+    -fx-border-color: #dcdfe3;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.botonCancelar:hover {
+    -fx-background-color: #f1f3f5;
+    -fx-border-color: #c7ccd1;
+}
+
+.botonCancelar:pressed {
+    -fx-background-color: #e9ecef;
+}

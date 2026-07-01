@@ -1,0 +1,198 @@
+/*
+ * inicio.css
+ */
+
+.mainFxmlClass {
+    -fx-background-color: #f8fafc;
+}
+
+/* =========================================
+   TÍTULO PRINCIPAL
+   ========================================= */
+
+.tituloPrincipal {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1f2937;
+}
+
+.subtituloPrincipal {
+    -fx-font-size: 14px;
+    -fx-text-fill: #6b7280;
+}
+
+/* =========================================
+   COMBOBOX
+   ========================================= */
+
+.comboUsuario {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-border-color: #d1d5db;
+    -fx-border-radius: 8;
+    -fx-padding: 0 12 0 12;
+    -fx-font-size: 13px;
+}
+
+.comboUsuario:focused {
+    -fx-border-color: #2563eb;
+}
+
+.comboUsuario .list-cell {
+    -fx-background-color: white;
+    -fx-text-fill: #1f2937;
+    -fx-font-size: 13px;
+    -fx-padding: 6 12 6 12;
+}
+
+.comboUsuario .list-view {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-border-color: #d1d5db;
+    -fx-border-radius: 8;
+}
+
+.comboUsuario .list-view .list-cell {
+    -fx-background-color: white;
+    -fx-text-fill: #1f2937;
+    -fx-font-size: 13px;
+    -fx-padding: 6 12 6 12;
+}
+
+.comboUsuario .list-view .list-cell:hover {
+    -fx-background-color: #edf4ff;
+}
+
+.comboUsuario .list-view .list-cell:selected {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: white;
+}
+
+.comboUsuario .arrow-button {
+    -fx-background-color: transparent;
+}
+
+.comboUsuario .arrow {
+    -fx-background-color: #6b7280;
+}
+
+.comboUsuario .text-field {
+    -fx-background-color: white;
+    -fx-text-fill: #1f2937;
+    -fx-font-size: 13px;
+    -fx-prompt-text-fill: #94a3b8;
+}
+
+/* =========================================
+   PANELES
+   ========================================= */
+
+.panelContador,
+.panelUltimoSellado {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-border-color: #d1d5db;
+    -fx-border-radius: 8;
+    -fx-border-width: 1;
+}
+
+/* =========================================
+   TÍTULOS DE PANEL
+   ========================================= */
+
+.tituloPanel {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1f2937;
+}
+
+/* =========================================
+   CONTADOR PRINCIPAL (número grande)
+   ========================================= */
+
+.contadorPrincipal {
+    -fx-font-size: 48px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2563eb;
+}
+
+/* =========================================
+   TEXTO EQUIVALENTE (días en letras)
+   ========================================= */
+
+.textoEquivalente {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1f2937;
+}
+
+/* =========================================
+   FECHAS
+   ========================================= */
+
+.etiquetaProximo {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1f2937;
+}
+
+.fechaProximo {
+    -fx-font-size: 14px;
+    -fx-text-fill: #1f2937;
+}
+
+.datoPrincipal {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1f2937;
+}
+
+/* =========================================
+   SEPARADOR
+   ========================================= */
+
+.separator {
+    -fx-background-color: #e5e7eb;
+}
+
+.separator .line {
+    -fx-border-color: #e5e7eb;
+    -fx-border-width: 1;
+}
+
+/* =========================================
+   TEXTO DESCRIPTIVO (estado)
+   ========================================= */
+
+.descripcionPanel {
+    -fx-font-size: 14px;
+    -fx-text-fill: #6b7280;
+}
+
+/* =========================================
+   HYPERLINK (enlace para sellar)
+   ========================================= */
+
+.hyperlink {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2563eb;
+    -fx-underline: true;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+}
+
+.hyperlink:hover {
+    -fx-text-fill: #1d4ed8;
+    -fx-underline: true;
+}
+
+.hyperlink:visited {
+    -fx-text-fill: #2563eb;
+    -fx-underline: true;
+}
+
+.hyperlink:focused {
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+}

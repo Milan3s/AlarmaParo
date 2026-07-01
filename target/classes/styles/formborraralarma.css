@@ -1,0 +1,223 @@
+/*
+ * formborraralarma.css
+ */
+
+.mainFxmlClass {
+    -fx-background-color: #f8fafc;
+}
+
+/* =========================================
+   TÍTULO Y DESCRIPCIÓN
+   ========================================= */
+
+.tituloPrincipal {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1f2937;
+}
+
+.subtituloPrincipal {
+    -fx-font-size: 14px;
+    -fx-text-fill: #6b7280;
+}
+
+/* =========================================
+   ETIQUETAS DE CAMPO
+   ========================================= */
+
+.etiquetaCampo {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1f2937;
+}
+
+/* =========================================
+   COMBOBOX
+   ========================================= */
+
+.comboFormulario {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-border-color: #d1d5db;
+    -fx-border-radius: 8;
+    -fx-padding: 0 12 0 12;
+    -fx-font-size: 13px;
+}
+
+.comboFormulario:focused {
+    -fx-border-color: #2563eb;
+}
+
+.comboFormulario .list-cell {
+    -fx-background-color: white;
+    -fx-text-fill: #1f2937;
+    -fx-font-size: 13px;
+    -fx-padding: 6 12 6 12;
+}
+
+.comboFormulario .list-view {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-border-color: #d1d5db;
+    -fx-border-radius: 8;
+}
+
+.comboFormulario .list-view .list-cell {
+    -fx-background-color: white;
+    -fx-text-fill: #1f2937;
+    -fx-font-size: 13px;
+    -fx-padding: 6 12 6 12;
+}
+
+.comboFormulario .list-view .list-cell:hover {
+    -fx-background-color: #edf4ff;
+}
+
+.comboFormulario .list-view .list-cell:selected {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: white;
+}
+
+.comboFormulario .arrow-button {
+    -fx-background-color: transparent;
+}
+
+.comboFormulario .arrow {
+    -fx-background-color: #6b7280;
+}
+
+.comboFormulario .text-field {
+    -fx-background-color: white;
+    -fx-text-fill: #1f2937;
+    -fx-font-size: 13px;
+    -fx-prompt-text-fill: #94a3b8;
+}
+
+/* =========================================
+   DATEPICKER
+   ========================================= */
+
+.datePickerFormulario {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-border-color: #d1d5db;
+    -fx-border-radius: 8;
+    -fx-font-size: 13px;
+}
+
+.datePickerFormulario:focused {
+    -fx-border-color: #2563eb;
+}
+
+.datePickerFormulario .text-field {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-font-size: 13px;
+}
+
+.datePickerFormulario .arrow-button {
+    -fx-background-color: #f3f4f6;
+    -fx-background-radius: 0 8 8 0;
+}
+
+.datePickerFormulario .arrow-button:hover {
+    -fx-background-color: #e5e7eb;
+}
+
+/* =========================================
+   SPINNER
+   ========================================= */
+
+.spinnerFormulario {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-border-color: #d1d5db;
+    -fx-border-radius: 8;
+    -fx-font-size: 13px;
+}
+
+.spinnerFormulario:focused {
+    -fx-border-color: #2563eb;
+}
+
+.spinnerFormulario .text-field {
+    -fx-background-color: white;
+    -fx-font-size: 13px;
+}
+
+.spinnerFormulario .increment-arrow-button,
+.spinnerFormulario .decrement-arrow-button {
+    -fx-background-color: #f3f4f6;
+}
+
+.spinnerFormulario .increment-arrow-button:hover,
+.spinnerFormulario .decrement-arrow-button:hover {
+    -fx-background-color: #e5e7eb;
+}
+
+/* =========================================
+   TEXTAREA
+   ========================================= */
+
+.textAreaFormulario {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-border-color: #d1d5db;
+    -fx-border-radius: 8;
+    -fx-font-size: 13px;
+    -fx-padding: 10;
+}
+
+.textAreaFormulario:focused {
+    -fx-border-color: #2563eb;
+}
+
+.textAreaFormulario .content {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+}
+
+/* =========================================
+   BOTÓN BORRAR (peligro)
+   ========================================= */
+
+.botonPeligro {
+    -fx-background-color: #dc2626;
+    -fx-background-radius: 8;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.botonPeligro:hover {
+    -fx-background-color: #b91c1c;
+}
+
+.botonPeligro:pressed {
+    -fx-background-color: #991b1b;
+}
+
+/* =========================================
+   BOTÓN CANCELAR
+   ========================================= */
+
+.botonCancelar {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-border-color: #d1d5db;
+    -fx-border-radius: 8;
+    -fx-text-fill: #1f2937;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.botonCancelar:hover {
+    -fx-background-color: #f3f4f6;
+    -fx-border-color: #2563eb;
+}
+
+.botonCancelar:pressed {
+    -fx-background-color: #e5e7eb;
+}

@@ -1,0 +1,282 @@
+/*
+ * calendario.css
+ */
+
+.mainFxmlClass {
+    -fx-background-color: #f8fafc;
+}
+
+/* =========================================
+   TÍTULO PRINCIPAL
+   ========================================= */
+
+.tituloPrincipal {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1f2937;
+}
+
+.subtituloPrincipal {
+    -fx-font-size: 14px;
+    -fx-text-fill: #6b7280;
+}
+
+/* =========================================
+   NAVEGACIÓN (HBox)
+   ========================================= */
+
+.navegacion {
+    -fx-alignment: center;
+    -fx-spacing: 20;
+}
+
+/* =========================================
+   BOTONES DE FLECHA (< >)
+   ========================================= */
+
+.botonFlecha {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-border-color: #d1d5db;
+    -fx-border-radius: 8;
+    -fx-text-fill: #1f2937;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-pref-width: 40;
+    -fx-pref-height: 35;
+}
+
+.botonFlecha:hover {
+    -fx-background-color: #f3f4f6;
+    -fx-border-color: #2563eb;
+}
+
+.botonFlecha:pressed {
+    -fx-background-color: #e5e7eb;
+}
+
+/* =========================================
+   LABEL MES
+   ========================================= */
+
+.labelMes {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1f2937;
+    -fx-alignment: center;
+    -fx-pref-width: 240;
+}
+
+/* =========================================
+   COMBOBOX AÑO
+   ========================================= */
+
+.comboAnio {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-border-color: #d1d5db;
+    -fx-border-radius: 8;
+    -fx-padding: 0 12 0 12;
+    -fx-font-size: 13px;
+    -fx-pref-height: 35;
+    -fx-pref-width: 110;
+}
+
+.comboAnio:focused {
+    -fx-border-color: #2563eb;
+}
+
+.comboAnio .list-cell {
+    -fx-background-color: white;
+    -fx-text-fill: #1f2937;
+    -fx-font-size: 13px;
+    -fx-padding: 6 12 6 12;
+}
+
+.comboAnio .list-view {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-border-color: #d1d5db;
+    -fx-border-radius: 8;
+}
+
+.comboAnio .list-view .list-cell {
+    -fx-background-color: white;
+    -fx-text-fill: #1f2937;
+    -fx-font-size: 13px;
+    -fx-padding: 6 12 6 12;
+}
+
+.comboAnio .list-view .list-cell:hover {
+    -fx-background-color: #edf4ff;
+}
+
+.comboAnio .list-view .list-cell:selected {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: white;
+}
+
+.comboAnio .arrow-button {
+    -fx-background-color: transparent;
+}
+
+.comboAnio .arrow {
+    -fx-background-color: #6b7280;
+}
+
+.comboAnio .text-field {
+    -fx-background-color: white;
+    -fx-text-fill: #1f2937;
+    -fx-font-size: 13px;
+    -fx-prompt-text-fill: #94a3b8;
+}
+
+/* =========================================
+   FECHA SELECCIONADA
+   ========================================= */
+
+.fechaSeleccionada {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2563eb;
+}
+
+/* =========================================
+   DÍAS DE LA SEMANA
+   ========================================= */
+
+.diaSemana {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #6b7280;
+    -fx-alignment: center;
+}
+
+/* =========================================
+   GRID CALENDARIO
+   ========================================= */
+
+.gridCalendario {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-border-color: #d1d5db;
+    -fx-border-radius: 8;
+    -fx-grid-lines-visible: false;
+    -fx-hgap: 1;
+    -fx-vgap: 1;
+    -fx-padding: 2;
+}
+
+/* =========================================
+   CELDAS DEL CALENDARIO
+   ========================================= */
+
+.celdaCalendario {
+    -fx-background-color: white;
+    -fx-background-radius: 6;
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 6;
+    -fx-border-width: 0.5;
+    -fx-padding: 8;
+    -fx-alignment: top-left;
+}
+
+.celdaCalendario:hover {
+    -fx-background-color: #f3f4f6;
+}
+
+/* Celda que pertenece a otro mes */
+.celdaOtroMes {
+    -fx-background-color: #f9fafb;
+    -fx-background-radius: 6;
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 6;
+    -fx-border-width: 0.5;
+    -fx-padding: 8;
+    -fx-alignment: top-left;
+    -fx-opacity: 0.4;
+}
+
+/* Celda del día actual */
+.celdaHoy {
+    -fx-background-color: #dbeafe;
+    -fx-background-radius: 6;
+    -fx-border-color: #2563eb;
+    -fx-border-radius: 6;
+    -fx-border-width: 1.5;
+    -fx-padding: 8;
+    -fx-alignment: top-left;
+}
+
+/* Celda seleccionada */
+.celdaSeleccionada {
+    -fx-background-color: #2563eb;
+    -fx-background-radius: 6;
+    -fx-border-color: #1d4ed8;
+    -fx-border-radius: 6;
+    -fx-border-width: 1.5;
+    -fx-padding: 8;
+    -fx-alignment: top-left;
+}
+
+/* =========================================
+   TEXTO DENTRO DE LAS CELDAS
+   ========================================= */
+
+.numeroDia {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1f2937;
+}
+
+.celdaOtroMes .numeroDia {
+    -fx-text-fill: #9ca3af;
+}
+
+.celdaHoy .numeroDia {
+    -fx-text-fill: #2563eb;
+}
+
+.celdaSeleccionada .numeroDia {
+    -fx-text-fill: white;
+}
+
+/* Indicador de evento/renovación */
+.indicadorEvento {
+    -fx-font-size: 10px;
+    -fx-text-fill: #2563eb;
+    -fx-padding: 2 0 0 0;
+}
+
+.celdaSeleccionada .indicadorEvento {
+    -fx-text-fill: white;
+}
+
+/* =========================================
+   SCROLL (por si acaso)
+   ========================================= */
+
+.scroll-bar:vertical,
+.scroll-bar:horizontal {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .track {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #cbd5e1;
+    -fx-background-radius: 20;
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-background-color: transparent;
+}

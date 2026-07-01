@@ -1,0 +1,54 @@
+
+.root {
+    -fx-background-color: white;
+}
+
+/* Barra lateral */
+.sidebar {
+    -fx-background-color: white;
+    -fx-border-color: #e5e5e5;
+    -fx-border-width: 0 1 0 0;
+}
+
+/* Título */
+.sidebar-title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+}
+
+/* Descripción */
+.sidebar-description {
+    -fx-font-size: 12px;
+    -fx-text-fill: #666666;
+}
+
+/* Botones */
+.sidebar-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-font-weight: 500;
+    -fx-alignment: CENTER_LEFT;
+    -fx-content-display: LEFT;
+    -fx-graphic-text-gap: 12;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-padding: 0 0 0 15;
+}
+
+/* Hover */
+.sidebar-button:hover {
+    -fx-background-color: #f3f3f3;
+}
+
+/* Botón seleccionado */
+.sidebar-button:focused {
+    -fx-background-color: #e8e8e8;
+    -fx-text-fill: black;
+}
+
+/* Sin borde al pulsar */
+.sidebar-button:pressed {
+    -fx-background-color: #dddddd;
+}

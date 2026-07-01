@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="mainContainer" prefHeight="900.0" prefWidth="1400.0" stylesheets="@../styles/sidebar.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.SidebarController">
+
+    <left>
+
+        <VBox alignment="TOP_CENTER" prefWidth="220.0" spacing="15.0" styleClass="sidebar">
+
+            <padding>
+
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+
+            </padding>
+
+            <children>
+
+                <!-- Título -->
+                <Label styleClass="sidebar-title" text="AlarmaParo" />
+
+                <!-- Descripción -->
+                <Label alignment="CENTER" prefWidth="180.0" styleClass="sidebar-description" text="Sistema para la gestión y seguimiento de renovaciones del paro." wrapText="true" />
+
+                <!-- Botón Inicio -->
+                <Button fx:id="inicioButton" onAction="#switchToInicio" prefHeight="40.0" prefWidth="180.0" styleClass="sidebar-button" text="Inicio">
+
+                    <graphic>
+
+                        <ImageView fitHeight="20.0" fitWidth="20.0" preserveRatio="true">
+
+                            <image>
+
+                                <Image url="@../Imagenes/home.png" />
+
+                            </image>
+
+                        </ImageView>
+
+                    </graphic>
+
+                </Button>
+
+                <!-- Botón Renovar -->
+                <Button fx:id="renovarButton" onAction="#switchToRenovar" prefHeight="40.0" prefWidth="180.0" styleClass="sidebar-button" text="Renovar">
+
+                    <graphic>
+
+                        <ImageView fitHeight="22.0" fitWidth="23.0" preserveRatio="true">
+
+                            <image>
+
+                                <Image url="@../Imagenes/renew.png" />
+
+                            </image>
+
+                        </ImageView>
+
+                    </graphic>
+
+                </Button>
+
+                <!-- Botón Recordatorio -->
+                <Button fx:id="recordatorioButton" onAction="#switchToRecordatorio" prefHeight="40.0" prefWidth="180.0" styleClass="sidebar-button" text="Recordatorio">
+
+                    <graphic>
+
+                        <ImageView fitHeight="21.0" fitWidth="23.0" preserveRatio="true">
+
+                            <image>
+
+                                <Image url="@../Imagenes/reminder.png" />
+
+                            </image>
+
+                        </ImageView>
+
+                    </graphic>
+
+                </Button>
+
+                <!-- Botón Historial -->
+                <Button fx:id="historialButton" onAction="#switchToHistorial" prefHeight="40.0" prefWidth="180.0" styleClass="sidebar-button" text="Historial">
+
+                    <graphic>
+
+                        <ImageView fitHeight="27.0" fitWidth="23.0" preserveRatio="true">
+
+                            <image>
+
+                                <Image url="@../Imagenes/history.png" />
+
+                            </image>
+
+                        </ImageView>
+
+                    </graphic>
+
+                </Button>
+
+                <!-- Botón Calendario -->
+                <Button fx:id="calendarioButton" onAction="#switchToCalendario" prefHeight="40.0" prefWidth="180.0" styleClass="sidebar-button" text="Calendario">
+
+                    <graphic>
+
+                        <ImageView fitHeight="25.0" fitWidth="25.0" preserveRatio="true">
+
+                            <image>
+
+                                <Image url="@../Imagenes/calendar.png" />
+
+                            </image>
+
+                        </ImageView>
+
+                    </graphic>
+
+                </Button>
+
+            </children>
+
+        </VBox>
+
+    </left>
+
+    <center>
+
+        <!-- Contenedor donde se cargan las diferentes vistas -->
+        <VBox fx:id="contentPane" BorderPane.alignment="CENTER" />
+
+    </center>
+
+</BorderPane>
