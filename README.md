@@ -2,52 +2,57 @@
 
 ![AlarmaParo](portada-alarma-paro.png)
 
-> **AlarmaParo** es una aplicación de escritorio desarrollada en **JavaFX** que permite gestionar de forma sencilla la renovación de la demanda de empleo, evitando olvidos mediante un sistema de recordatorios y manteniendo un historial completo de todas las renovaciones realizadas.
+> **AlarmaParo** es un software de escritorio desarrollado en **JavaFX** que facilita la gestión y el seguimiento de la renovación de la demanda de empleo. La aplicación ayuda a evitar olvidos mediante un sistema de recordatorios, un calendario integrado y un historial completo de renovaciones, ofreciendo una solución sencilla, rápida e intuitiva.
 
 ---
 
-## 📖 Descripción
+# 📖 Descripción
 
-El objetivo de este proyecto es ofrecer una herramienta intuitiva para controlar el estado de la demanda de empleo.
+**AlarmaParo** nace con el objetivo de proporcionar una herramienta que permita controlar de forma cómoda el estado de la demanda de empleo y conocer en todo momento cuándo debe realizarse la siguiente renovación.
 
-La aplicación permite registrar cada renovación, almacenar el historial, configurar recordatorios personalizados y consultar el tiempo restante hasta el próximo sellado, todo ello mediante una interfaz moderna desarrollada con JavaFX y respaldada por una base de datos MySQL.
+La aplicación permite registrar renovaciones, administrar usuarios, configurar recordatorios personalizados, consultar el historial de sellados y visualizar una cuenta atrás con el tiempo restante hasta la próxima renovación.
+
+Toda la información se almacena de forma persistente en una base de datos **MySQL**, mientras que la interfaz gráfica ha sido desarrollada con **JavaFX**, proporcionando una experiencia visual moderna y fácil de utilizar.
 
 ---
 
-## ✨ Funcionalidades
+# ✨ Funcionalidades
 
-- 👤 Gestión de usuarios.
+- 👤 Gestión completa de usuarios.
 - 📅 Registro de renovaciones de la demanda de empleo.
-- ✏️ Modificación de renovaciones.
+- ✏️ Edición de renovaciones.
 - ❌ Eliminación de renovaciones.
-- 🔍 Consulta de renovaciones registradas.
-- 🔔 Sistema de recordatorios personalizables.
-- 🕒 Cuenta atrás hasta el próximo sellado.
+- 🔍 Consulta y búsqueda de renovaciones.
+- 🔔 Creación de recordatorios personalizados.
+- ⏳ Cuenta atrás automática hasta el próximo sellado.
 - 📚 Historial completo de renovaciones.
-- 🗓️ Calendario con las próximas fechas de renovación.
+- 🗓️ Calendario con próximas renovaciones.
 - 💾 Persistencia de datos mediante MySQL.
+- 🎨 Interfaz moderna desarrollada con JavaFX.
 
 ---
 
-## 🖥️ Tecnologías utilizadas
+# 🖥️ Tecnologías utilizadas
 
-| Tecnología | Uso |
-|------------|-----|
-| ☕ Java | Lenguaje principal |
-| 🎨 JavaFX | Interfaz gráfica de escritorio |
-| 🗄️ MySQL | Base de datos |
-| 🔌 JDBC | Conexión con MySQL |
+| Tecnología | Descripción |
+|------------|-------------|
+| ☕ Java | Lenguaje principal de desarrollo |
+| 🎨 JavaFX | Desarrollo de la interfaz gráfica |
+| 🗄️ MySQL | Sistema gestor de base de datos |
+| 🔌 JDBC | Conexión entre la aplicación y MySQL |
 | 📦 Maven | Gestión de dependencias |
 | 🎨 CSS | Personalización de la interfaz |
 | 🛠️ Scene Builder | Diseño de las vistas FXML |
 
 ---
 
-## 🗄️ Base de datos
+# 🗄️ Base de datos
 
-La aplicación utiliza **MySQL** como sistema gestor de base de datos para almacenar toda la información de forma persistente.
+La aplicación utiliza **MySQL** como sistema gestor de base de datos para almacenar toda la información del sistema.
 
-Se gestionan las siguientes entidades:
+El proyecto incluye el script SQL necesario para crear automáticamente la base de datos y todas sus tablas.
+
+Las principales entidades gestionadas son:
 
 - Usuarios
 - Renovaciones
@@ -55,78 +60,123 @@ Se gestionan las siguientes entidades:
 - Historial
 - Calendario
 
-La comunicación entre la aplicación y la base de datos se realiza mediante **JDBC**, implementando el patrón **DAO (Data Access Object)** para separar la lógica de acceso a datos de la interfaz gráfica.
+El acceso a los datos se realiza mediante **JDBC**, implementando el patrón de diseño **DAO (Data Access Object)** para mantener una correcta separación entre la lógica de negocio y el acceso a la base de datos.
 
 ---
 
-## 📌 Operaciones CRUD
+# 📌 Operaciones CRUD
 
-El proyecto implementa operaciones completas **CRUD (Create, Read, Update y Delete)** para la gestión de la información.
+La aplicación implementa operaciones completas **CRUD (Create, Read, Update y Delete)** sobre todas las entidades principales.
 
-### Renovaciones
+## Renovaciones
 
-- Crear renovación
-- Consultar renovaciones
-- Modificar renovación
-- Eliminar renovación
+- Crear renovación.
+- Consultar renovaciones.
+- Modificar renovación.
+- Eliminar renovación.
 
-### Recordatorios
+## Recordatorios
 
-- Crear recordatorio
-- Consultar recordatorios
-- Modificar recordatorio
-- Eliminar recordatorio
+- Crear recordatorio.
+- Consultar recordatorios.
+- Modificar recordatorio.
+- Eliminar recordatorio.
 
-### Usuarios
+## Usuarios
 
-- Alta de usuarios
-- Consulta de usuarios
-- Edición de usuarios
-- Eliminación de usuarios
-
----
-
-## 🔔 Sistema de recordatorios
-
-AlarmaParo incorpora un sistema de avisos que permite configurar recordatorios antes de la fecha de renovación de la demanda de empleo.
-
-El usuario puede visualizar en todo momento:
-
-- Tiempo restante hasta el próximo sellado.
-- Fecha de la última renovación.
-- Próxima fecha de renovación.
-- Historial de renovaciones anteriores.
-
-De esta forma se minimiza el riesgo de olvidar renovar la demanda de empleo.
+- Crear usuario.
+- Consultar usuarios.
+- Modificar usuario.
+- Eliminar usuario.
 
 ---
 
-## 🚀 Instalación
+# 🔔 Sistema de recordatorios
 
-Clona el repositorio:
+AlarmaParo incorpora un sistema de avisos configurable que permite recordar con antelación la fecha de renovación de la demanda de empleo.
+
+Desde la pantalla principal el usuario puede consultar en cualquier momento:
+
+- ⏳ Tiempo restante hasta el próximo sellado.
+- 📅 Fecha de la próxima renovación.
+- ✅ Fecha del último sellado.
+- 📚 Historial completo de renovaciones.
+- 🗓️ Calendario con las próximas fechas.
+
+Gracias a ello, el usuario puede realizar un seguimiento continuo de su demanda de empleo y reducir el riesgo de olvidar la renovación.
+
+---
+
+# 🚀 Instalación
+
+## 1. Clonar el repositorio
 
 ```bash
 git clone https://github.com/TU_USUARIO/AlarmaParo.git
 ```
 
-Accede al proyecto:
+## 2. Abrir el proyecto
+
+Accede al directorio del proyecto:
 
 ```bash
 cd AlarmaParo
 ```
 
-Abre el proyecto con **NetBeans** (o cualquier IDE compatible con Maven), configura la conexión con **MySQL**, importa la base de datos y ejecuta la aplicación.
+Importa el proyecto directamente desde **Apache NetBeans** como un proyecto **Maven**.
 
 ---
 
-## 👨‍💻 Autor
+## 3. Importar la base de datos
+
+La base de datos **MySQL** ya se encuentra incluida dentro del proyecto mediante un archivo **.sql**.
+
+Únicamente debes importar dicho archivo utilizando **MySQL Workbench**, **phpMyAdmin** o cualquier otro gestor compatible con MySQL.
+
+Una vez importada la base de datos, verifica que el servidor MySQL se encuentre en ejecución.
+
+---
+
+## 4. Configurar la conexión
+
+Si tu instalación utiliza una dirección IP, puerto, usuario, contraseña o nombre de base de datos diferente, deberás modificar la configuración de la conexión.
+
+Dirígete al siguiente directorio del proyecto:
+
+```text
+src/main/java/config/
+```
+
+Dentro de esta carpeta encontrarás el archivo encargado de configurar la conexión con MySQL.
+
+Modifica los siguientes parámetros según tu instalación:
+
+- Dirección IP o Host.
+- Puerto de conexión.
+- Nombre de la base de datos.
+- Usuario.
+- Contraseña.
+
+Guarda los cambios y vuelve a ejecutar la aplicación.
+
+---
+
+## 5. Ejecutar la aplicación
+
+Una vez importada la base de datos y configurada la conexión, ejecuta el proyecto desde **Apache NetBeans**.
+
+---
+
+# 👨‍💻 Autor
 
 **Soujirito**
 
-Proyecto desarrollado como práctica de ** Software Independiente ** utilizando **JavaFX**, **MySQL** y **JDBC** para implementar una aplicación de escritorio con arquitectura basada en DAO y operaciones CRUD completas.
+**AlarmaParo** es un **software independiente** desarrollado utilizando **Java**, **JavaFX**, **MySQL** y **JDBC**.
+
+El proyecto implementa una arquitectura basada en el patrón **DAO (Data Access Object)** y operaciones **CRUD** completas para la gestión de usuarios, renovaciones y recordatorios de la demanda de empleo, ofreciendo además un calendario integrado y un historial de renovaciones para facilitar el seguimiento de todas las fechas importantes.
 
 ---
 
-## 📄 Licencia
+# 📄 Licencia
 
-Este proyecto ha sido desarrollado con fines educativos y de aprendizaje.
+Este proyecto se distribuye como **software independiente** y ha sido desarrollado con fines educativos, de aprendizaje y como demostración de conocimientos en el desarrollo de aplicaciones de escritorio utilizando **JavaFX**, **JDBC** y **MySQL**.
