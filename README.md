@@ -123,7 +123,7 @@ Abre el proyecto con **NetBeans** (o cualquier IDE compatible con Maven), config
 
 **Soujirito**
 
-Proyecto desarrollado como práctica de **Desarrollo de Aplicaciones Multiplataforma (DAM)** utilizando **JavaFX**, **MySQL** y **JDBC** para implementar una aplicación de escritorio con arquitectura basada en DAO y operaciones CRUD completas.
+Proyecto desarrollado como práctica de ** Software Independiente ** utilizando **JavaFX**, **MySQL** y **JDBC** para implementar una aplicación de escritorio con arquitectura basada en DAO y operaciones CRUD completas.
 
 ---
 
