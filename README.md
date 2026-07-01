@@ -33,33 +33,6 @@ La aplicación permite registrar renovaciones, crear recordatorios, consultar el
 - Scene Builder
 - CSS
 
----
-
-## 📂 Estructura del proyecto
-
-```
-
-AlarmaParo
-│
-├── src
-│   ├── dao
-│   ├── database
-│   ├── main
-│   ├── models
-│   └── resources
-│       ├── css
-│       ├── images
-│       └── fxml
-│
-├── docs
-│   └── img
-│       └── portada.png
-│
-└── pom.xml
-
-````
-
----
 
 ## 🗄️ Base de datos
 
